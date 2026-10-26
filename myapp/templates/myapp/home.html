@@ -1,0 +1,89 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+<section class="hero-section">
+  <div class="status-pill">
+    <span class="pulse-dot"></span>
+    Available for Projects &amp; Web Development
+  </div>
+
+  <h1 class="hero-title">
+    Hi, I'm <span class="gradient-text">Bhuvanashree</span> 👋
+  </h1>
+
+  <p class="hero-subtitle">
+    Aspiring Python &amp; Django Full-Stack Developer. Building clean, scalable, database-driven web applications and modern interactive web experiences.
+  </p>
+
+  <div class="cta-group">
+    <a href="{% url 'contact' %}" class="btn btn-primary" id="btn-hero-contact">Get In Touch</a>
+    <a href="{% url 'about' %}" class="btn btn-secondary" id="btn-hero-about">Explore My Journey</a>
+    <a href="https://github.com/bhuvanashreekr-del" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+      View GitHub Repositories ↗
+    </a>
+  </div>
+</section>
+
+<!-- Stats Grid -->
+<div class="stats-grid">
+  <div class="stat-card">
+    <div class="stat-number">3+</div>
+    <div class="stat-label">Dynamic Django Pages</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-number">100%</div>
+    <div class="stat-label">Python Backend Architecture</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-number">SQLite</div>
+    <div class="stat-label">Model Database Storage</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-number">Render</div>
+    <div class="stat-label">Production Cloud Ready</div>
+  </div>
+</div>
+
+<!-- Core Tech Stack -->
+<div class="section-header">
+  <span class="section-tag">// Core Technologies</span>
+  <h2 class="section-title">My Tech Stack &amp; Tooling</h2>
+</div>
+
+<div class="tech-badges-grid">
+  <div class="tech-badge">🐍 Python 3.15</div>
+  <div class="tech-badge">🌐 Django 6.1</div>
+  <div class="tech-badge">🎨 HTML5 &amp; Modern CSS3</div>
+  <div class="tech-badge">⚡ JavaScript (ES6+)</div>
+  <div class="tech-badge">🗄️ SQLite &amp; Django ORM</div>
+  <div class="tech-badge">🐙 Git &amp; GitHub</div>
+  <div class="tech-badge">🚀 Gunicorn &amp; WhiteNoise</div>
+  <div class="tech-badge">☁️ Render Cloud Hosting</div>
+</div>
+
+<!-- What I've Built -->
+<div class="section-header">
+  <span class="section-tag">// Key Capabilities</span>
+  <h2 class="section-title">What Powers This Website</h2>
+</div>
+
+<div class="cards-grid">
+  <div class="feature-card">
+    <div class="card-icon">⚡</div>
+    <h3>Django MVT Architecture</h3>
+    <p>Organized modular web structure utilizing Model-View-Template architecture, URL routing, and dynamic template rendering with custom context.</p>
+  </div>
+
+  <div class="feature-card">
+    <div class="card-icon">📨</div>
+    <h3>Interactive Contact System</h3>
+    <p>Real-time form submission secured with Django CSRF token, server-side data validation, and persistent storage in SQLite via Django models.</p>
+  </div>
+
+  <div class="feature-card">
+    <div class="card-icon">🚀</div>
+    <h3>Production Cloud Deployment</h3>
+    <p>Configured with WSGI/Gunicorn, WhiteNoise compressed static assets, environment security, and streamlined for one-click hosting on Render.</p>
+  </div>
+</div>
+{% endblock %}
